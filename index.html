@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Souszy</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Crimson+Text:400,700" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -19,7 +19,7 @@
   <div id="menu">
     <p class="text-left">MENU</p>
     <span onclick="byebye()" class="glyphicon glyphicon-remove"></span>
-    <div id="menu1">
+    <div id="menu1" onclick="grilledcheese()">
       <h2 class="text-center">grilled cheese</h2>
     </div>
     <div id="menu2">
@@ -51,22 +51,26 @@
       </div>
     </div>
     <!-- Recipe choices w/ responsiveness -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4">
-            <btn class="btn btn-primary btn-block btn-lg">Grilled Cheese</btn>
-          </div>
-          <div class="col-md-4">
-            <btn class="btn btn-primary btn-block btn-lg">Italian Wedding Soup</btn>
-          </div>
-          <div class="col-md-4">
-            <btn class="btn btn-primary btn-block btn-lg">Sous Vide Pork Tenderloin</btn>
-          </div>
-          <div class="col-md-4">
-            <btn class="btn btn-primary btn-block btn-lg">BLAT Sandwich</btn>
-          </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <btn class="btn btn-primary btn-block btn-lg">Grilled Cheese</btn>
+        </div>
+        <div class="col-md-4">
+          <btn class="btn btn-primary btn-block btn-lg">Italian Wedding Soup</btn>
+        </div>
+        <div class="col-md-4">
+          <btn class="btn btn-primary btn-block btn-lg">Sous Vide Pork Tenderloin</btn>
+        </div>
+        <div class="col-md-4">
+          <btn class="btn btn-primary btn-block btn-lg">B.L.A.T. Sandwich</btn>
         </div>
       </div>
+    </div>
+    <!--GRILLED CHEESE-->
+    <div id="grilledcheese">
+      
+    </div>
   </main>
   <script src="js/script.js"></script>
 </body>
