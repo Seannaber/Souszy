@@ -12,14 +12,21 @@
 </head>
 <body>
   <header>
-    <span onclick="burgertime()" class="glyphicon glyphicon-menu-hamburger"></span>
+    <span id="burger" onclick="burgertime()" class="glyphicon glyphicon-menu-hamburger"></span>
     <p class="text-right">SOUSZY</p>
+    <!-- DESKTOP MENU -->
+    <nav class="text-center">
+      <span>Grilled Cheese</span>
+      <span>Grilled Cheese</span>
+      <span>Grilled Cheese</span>
+      <span>Grilled Cheese</span>
+    </nav>
   </header>
-  <!--MENU-->
+  <!--MOBILE/TABLET MENU-->
   <div id="menu">
     <p class="text-left">MENU</p>
     <span onclick="byebye()" class="glyphicon glyphicon-remove"></span>
-    <div id="menu1" onclick="grilledcheese()">
+    <div id="menu1" onclick="grilledcheese(); byebye();">
       <h2 class="text-center">grilled cheese</h2>
     </div>
     <div id="menu2">
@@ -35,8 +42,25 @@
   <!--THEDARKNESS appears when menu is activated-->
   <div id="thedarkness"></div>
   <!--Main container of App-->
-  <main>
+  <main id="appcontainer">
     <div id="hero">
+      <div id="onboard" class="row">
+        <div class="col-md-2"></div>
+        <div class="circle col-md-2 text-center">
+          <h2>Choose</h2>
+          <p>Pick something below that looks tasty and we'll get started</p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="circle col-md-2 text-center">
+          <h2>Gather</h2>
+          <p>Grab all the necessary ingredients and we'll get cookin'!</p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="circle col-md-2 text-center">
+          <h2>Create</h2>
+          <p>We'll guide you step by step until your belly is full.</p>
+        </div>
+      </div>
     </div>
     <!-- Page headline w/ responsiveness -->
     <div class="container">
@@ -53,17 +77,29 @@
     <!-- Recipe choices w/ responsiveness -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4">
-          <btn class="btn btn-primary btn-block btn-lg">Grilled Cheese</btn>
+        <div class="col-sm-6">
+          <div id="menu1" class="text-center">
+            <h2 class="text-center">Grilled Cheese</h2>
+            <p class="description text-center">An american classic with crisp, buttery bread</br> and ooey-gooey American cheese.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <btn class="btn btn-primary btn-block btn-lg">Italian Wedding Soup</btn>
+        <div class="col-sm-6">
+          <div id="menu1">
+            <h2 class="text-center">Grilled Cheese</h2>
+            <p class="description text-center">An american classic with crisp, buttery bread</br> and ooey-gooey American cheese.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <btn class="btn btn-primary btn-block btn-lg">Sous Vide Pork Tenderloin</btn>
+        <div class="col-sm-6">
+          <div id="menu1">
+            <h2 class="text-center">Grilled Cheese</h2>
+            <p class="description text-center">An american classic with crisp, buttery bread</br> and ooey-gooey American cheese.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <btn class="btn btn-primary btn-block btn-lg">B.L.A.T. Sandwich</btn>
+        <div class="col-sm-6">
+          <div id="menu1">
+            <h2 class="text-center">Grilled Cheese</h2>
+            <p class="description text-center">An american classic with crisp, buttery bread</br> and ooey-gooey American cheese.</p>
+          </div>
         </div>
       </div>
     </div>
