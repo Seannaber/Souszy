@@ -108,6 +108,50 @@ header {
 	background-blend-mode: multiply;
 }
 
+#heroGrilledCheese {
+	width: 100%;
+	height: 250px;
+	background-image: url("../img/menu1.jpg");
+	background-color: rgb(241,171,44);
+	background-size: cover;
+	background-blend-mode: multiply;
+}
+
+.grilledCheese {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(241,171,44);
+	display: none;
+}
+
+#grilledcheese0 {
+	display: none;
+}
+
+#grilledcheese1 {
+	display: none;
+}
+
+#grilledcheese2 {
+	display: none;
+}
+
+#grilledcheese3 {
+	display: none;
+}
+
+#grilledcheese4 {
+	display: none;
+}
+
+.prevnext {
+	font-size: 5em;
+}
+
 header p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2.5em;
@@ -177,6 +221,10 @@ nav span {
 	background-color: black;
 	border-radius: 50%;
 	opacity: .65;
+}
+
+ul {
+	list-style: none;
 }
 
 @media (min-width: 768px) {
