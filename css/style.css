@@ -7,6 +7,11 @@ body {
 	background-color: rgb(241,171,44);
 }
 
+p {
+	font-family: "Crimson Text", serif;
+	font-size: 1.4em;
+}
+
 #menu {
 	background-color: #dedbd5;
 	width: 80%;
@@ -110,7 +115,7 @@ header {
 
 #heroGrilledCheese {
 	width: 100%;
-	height: 250px;
+	height: 300px;
 	background-image: url("../img/menu1.jpg");
 	background-color: rgb(241,171,44);
 	background-size: cover;
@@ -126,6 +131,11 @@ header {
 	height: 100%;
 	background-color: rgb(241,171,44);
 	display: none;
+}
+
+.grilledCheese h1 {
+	color: white;
+	margin-top: -35px;
 }
 
 #grilledcheese0 {
@@ -148,8 +158,22 @@ header {
 	display: none;
 }
 
+.stepbg {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	width: 25%;
+	margin: 15px auto;
+}
+
 .prevnext {
 	font-size: 5em;
+}
+
+.prevnextrow {
+	position: fixed;
+	width: 100%;
+	bottom: 35px;
+	margin: 0 auto;
 }
 
 header p {
