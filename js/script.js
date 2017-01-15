@@ -11,7 +11,7 @@ var byebye = function() {
 var grilledcheese = function() {
 	$.cookie("Menu1", 0);
 	$("#grilledcheese" + Number($.cookie("Menu1"))).css({display: "block"});
-	$("main").css({visibility: "hidden"});
+	$(".description").css({display: "none"});
 };
 
 var grilledCheeseNext = function() {

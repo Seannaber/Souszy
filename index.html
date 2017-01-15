@@ -12,239 +12,241 @@
   <script src="js/jquery.cookie.js"></script>
 </head>
 <body>
-  <header>
-    <span id="burger" onclick="burgertime()" class="glyphicon glyphicon-menu-hamburger"></span>
-    <p class="text-right">SOUSZY</p>
-    <!-- DESKTOP MENU -->
-    <nav class="text-center">
-      <span>Grilled Cheese</span>
-      <span>Grilled Cheese</span>
-      <span>Grilled Cheese</span>
-      <span>Grilled Cheese</span>
-    </nav>
-  </header>
-  <!--MOBILE/TABLET MENU-->
-  <div id="menu">
-    <p class="text-left">MENU</p>
-    <span onclick="byebye()" class="glyphicon glyphicon-remove"></span>
-    <div id="menu1" onclick="grilledcheese(); byebye();">
-      <h2 class="text-center">grilled cheese</h2>
+  <div id="sitewrapper">
+    <header>
+      <span id="burger" onclick="burgertime()" class="glyphicon glyphicon-menu-hamburger"></span>
+      <p class="text-right">SOUSZY</p>
+      <!-- DESKTOP MENU -->
+      <nav class="text-center">
+        <span>Grilled Cheese</span>
+        <span>Grilled Cheese</span>
+        <span>Grilled Cheese</span>
+        <span>Grilled Cheese</span>
+      </nav>
+    </header>
+    <!--MOBILE/TABLET MENU-->
+    <div id="menu">
+      <p class="text-left">MENU</p>
+      <span onclick="byebye()" class="glyphicon glyphicon-remove"></span>
+      <div id="menu1" onclick="grilledcheese(); byebye();">
+        <h2 class="text-center">grilled cheese</h2>
+      </div>
+      <div id="menu2">
+        <h2 class="text-center">italian wedding soup</h2>
+      </div>
+      <div id="menu3">
+        <h2 class="text-center">pork tenderloin</h2>
+      </div>
+      <div id="menu4">
+        <h2 class="text-center">b.l.a.t. sandwich</h2>
+      </div>
     </div>
-    <div id="menu2">
-      <h2 class="text-center">italian wedding soup</h2>
-    </div>
-    <div id="menu3">
-      <h2 class="text-center">pork tenderloin</h2>
-    </div>
-    <div id="menu4">
-      <h2 class="text-center">b.l.a.t. sandwich</h2>
-    </div>
+    <!--THEDARKNESS appears when menu is activated-->
+    <div id="thedarkness"></div>
+    <!--Main container of App-->
+    <main class="container" id="appcontainer">
+      <div id="hero">
+        <div id="onboard" class="row">
+          <div class="col-md-2"></div>
+          <div class="circle col-md-2 text-center">
+            <h2>Choose</h2>
+            <p>Pick something below that looks tasty and we'll get started</p>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="circle col-md-2 text-center">
+            <h2>Gather</h2>
+            <p>Grab all the necessary ingredients and we'll get cookin'!</p>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="circle col-md-2 text-center">
+            <h2>Create</h2>
+            <p>We'll guide you step by step until your belly is full.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Page headline w/ responsiveness -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-10">
+            <h1 class="text-center">What should we make today?</h1>
+          </div>
+          <div class="col-xs-1">
+          </div>
+        </div>
+      </div>
+      <!-- Recipe choices w/ responsiveness -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="menu1" class="text-center" onclick="grilledcheese()">
+              <h2 class="text-center">Grilled Cheese</h2>
+              <p class="description text-center">An american classic with crisp, buttery bread</br> and ooey-gooey American cheese.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div id="menu1">
+              <h2 class="text-center">Grilled Cheese</h2>
+              <p class="description text-center">An american classic with crisp, buttery bread</br> and ooey-gooey American cheese.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div id="menu1">
+              <h2 class="text-center">Grilled Cheese</h2>
+              <p class="description text-center">An american classic with crisp, buttery bread</br> and ooey-gooey American cheese.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div id="menu1">
+              <h2 class="text-center">Grilled Cheese</h2>
+              <p class="description text-center">An american classic with crisp, buttery bread</br> and ooey-gooey American cheese.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+      <!--GRILLED CHEESE SLIDE 1-->
+      <div class="grilledCheese" id="grilledcheese0">
+        <div id="heroGrilledCheese"></div>
+        <h1 class="text-center">Grilled Cheese</h1>
+        <h3 class="text-center stepbg text-center">Gather</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+              <ul>
+                <li><span class="glyphicon glyphicon-ok-sign"></span> 2 slices white bread</li>
+                <li><span class="glyphicon glyphicon-ok-sign"></span> 1 Tbs bacon fat</li>
+                <li><span class="glyphicon glyphicon-ok-sign"></span> 2 slices American cheese</li>
+                <li><span class="glyphicon glyphicon-ok-sign"></span> 1 slice tomato</li>
+                <li><span class="glyphicon glyphicon-ok-sign"></span> 1/2 avocado</li>
+                <li><span class="glyphicon glyphicon-ok-sign"></span> Non-stick pan</li>
+              </ul>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+        </div>
+        <div class="prevnextrow row">
+          <div class="col-xs-4 text-center">
+            <span class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
+          </div>
+          <div class="col-xs-4"></div>
+          <div class="col-xs-4 text-center">
+            <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
+          </div>
+        </div>
+      </div>
+      <!--END GRILLED CHEESE SLIDE 1-->
+      <!--GRILLED CHEESE SLIDE 2-->
+      <div class="grilledCheese" id="grilledcheese1">
+        <div id="heroGrilledCheese"></div>
+        <h1 class="text-center">Grilled Cheese</h1>
+        <h3 class="text-center stepbg text-center">Step 1</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+              <p>
+                Place non-stick pan on stovetop over med-high heat. Once hot, place 1 Tbs butter in pan. When butter begins to sizzle, place both slices of bread in pan.
+              </p>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+        </div>
+        <div class="prevnextrow row">
+          <div class="col-xs-4 text-center">
+            <span onclick="grilledCheesePrev()" class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
+          </div>
+          <div class="col-xs-4"></div>
+          <div class="col-xs-4 text-center">
+            <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
+          </div>
+        </div>
+      </div>
+      <!--END GRILLED CHEESE SLIDE 2-->
+      <!--GRILLED CHEESE SLIDE 3-->
+      <div class="grilledCheese" id="grilledcheese2">
+        <div id="heroGrilledCheese"></div>
+        <h1 class="text-center">Grilled Cheese</h1>
+        <h3 class="text-center stepbg text-center">Step 2</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+              <p>
+                Swish bread around in pan to ensure butter coats bread. Fry until bottom of bread is golden brown. Flip bread slices over.
+              </p>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+        </div>
+        <div class="prevnextrow row">
+          <div class="col-xs-4 text-center">
+            <span onclick="grilledCheesePrev()" class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
+          </div>
+          <div class="col-xs-4"></div>
+          <div class="col-xs-4 text-center">
+            <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
+          </div>
+        </div>
+      </div>
+      <!--END GRILLED CHEESE SLIDE 3-->
+      <!--GRILLED CHEESE SLIDE 4-->
+      <div class="grilledCheese" id="grilledcheese3">
+        <div id="heroGrilledCheese"></div>
+        <h1 class="text-center">Grilled Cheese</h1>
+        <h3 class="text-center stepbg text-center">Step 3</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+              <p>
+                Add both slices of cheese to one piece of the bread. Smear other piece of bread with 1/2 avocado. Place tomato on top of avocado.
+              </p>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+        </div>
+        <div class="prevnextrow row">
+          <div class="col-xs-4 text-center">
+            <span onclick="grilledCheesePrev()" class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
+          </div>
+          <div class="col-xs-4"></div>
+          <div class="col-xs-4 text-center">
+            <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
+          </div>
+        </div>
+      </div>
+      <!--END GRILLED CHEESE SLIDE 4-->
+      <!--GRILLED CHEESE SLIDE 5-->
+      <div class="grilledCheese" id="grilledcheese4">
+        <div id="heroGrilledCheese"></div>
+        <h1 class="text-center">Grilled Cheese</h1>
+        <h3 class="text-center stepbg text-center">Step 4</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+              <p>
+                Once bottom of bread is golden brown, remove from heat and put both pieces of bread together. Enjoy!
+              </p>
+            </div>
+            <div class="col-xs-2"></div>
+          </div>
+        </div>
+        <div class="prevnextrow row text-center">
+          <div class="col-xs-4 text-center">
+            <span onclick="grilledCheesePrev()" class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
+          </div>
+          <div class="col-xs-4"></div>
+          <div class="col-xs-4 text-center">
+            <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
+          </div>
+        </div>
+      </div>
+      <!--END GRILLED CHEESE SLIDE 5-->
+    <script src="js/script.js"></script>
   </div>
-  <!--THEDARKNESS appears when menu is activated-->
-  <div id="thedarkness"></div>
-  <!--Main container of App-->
-  <main id="appcontainer">
-    <div id="hero">
-      <div id="onboard" class="row">
-        <div class="col-md-2"></div>
-        <div class="circle col-md-2 text-center">
-          <h2>Choose</h2>
-          <p>Pick something below that looks tasty and we'll get started</p>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="circle col-md-2 text-center">
-          <h2>Gather</h2>
-          <p>Grab all the necessary ingredients and we'll get cookin'!</p>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="circle col-md-2 text-center">
-          <h2>Create</h2>
-          <p>We'll guide you step by step until your belly is full.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Page headline w/ responsiveness -->
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-1">
-        </div>
-        <div class="col-xs-10">
-          <h1 class="text-center">What should we make today?</h1>
-        </div>
-        <div class="col-xs-1">
-        </div>
-      </div>
-    </div>
-    <!-- Recipe choices w/ responsiveness -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6">
-          <div id="menu1" class="text-center" onclick="grilledcheese()">
-            <h2 class="text-center">Grilled Cheese</h2>
-            <p class="description text-center">An american classic with crisp, buttery bread</br> and ooey-gooey American cheese.</p>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div id="menu1">
-            <h2 class="text-center">Grilled Cheese</h2>
-            <p class="description text-center">An american classic with crisp, buttery bread</br> and ooey-gooey American cheese.</p>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div id="menu1">
-            <h2 class="text-center">Grilled Cheese</h2>
-            <p class="description text-center">An american classic with crisp, buttery bread</br> and ooey-gooey American cheese.</p>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div id="menu1">
-            <h2 class="text-center">Grilled Cheese</h2>
-            <p class="description text-center">An american classic with crisp, buttery bread</br> and ooey-gooey American cheese.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-    <!--GRILLED CHEESE SLIDE 1-->
-    <div class="grilledCheese" id="grilledcheese0">
-      <div id="heroGrilledCheese"></div>
-      <h1 class="text-center">Grilled Cheese</h1>
-      <h3 class="text-center stepbg text-center">Gather</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-8">
-            <ul>
-              <li><span class="glyphicon glyphicon-ok-sign"></span> 2 slices white bread</li>
-              <li><span class="glyphicon glyphicon-ok-sign"></span> 1 Tbs bacon fat</li>
-              <li><span class="glyphicon glyphicon-ok-sign"></span> 2 slices American cheese</li>
-              <li><span class="glyphicon glyphicon-ok-sign"></span> 1 slice tomato</li>
-              <li><span class="glyphicon glyphicon-ok-sign"></span> 1/2 avocado</li>
-              <li><span class="glyphicon glyphicon-ok-sign"></span> Non-stick pan</li>
-            </ul>
-          </div>
-          <div class="col-xs-2"></div>
-        </div>
-      </div>
-      <div class="prevnextrow row">
-        <div class="col-xs-4 text-center">
-          <span class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
-        </div>
-        <div class="col-xs-4"></div>
-        <div class="col-xs-4 text-center">
-          <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
-        </div>
-      </div>
-    </div>
-    <!--END GRILLED CHEESE SLIDE 1-->
-    <!--GRILLED CHEESE SLIDE 2-->
-    <div class="grilledCheese" id="grilledcheese1">
-      <div id="heroGrilledCheese"></div>
-      <h1 class="text-center">Grilled Cheese</h1>
-      <h3 class="text-center stepbg text-center">Step 1</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-8">
-            <p>
-              Place non-stick pan on stovetop over med-high heat. Once hot, place 1 Tbs butter in pan. When butter begins to sizzle, place both slices of bread in pan.
-            </p>
-          </div>
-          <div class="col-xs-2"></div>
-        </div>
-      </div>
-      <div class="prevnextrow row">
-        <div class="col-xs-4 text-center">
-          <span onclick="grilledCheesePrev()" class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
-        </div>
-        <div class="col-xs-4"></div>
-        <div class="col-xs-4 text-center">
-          <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
-        </div>
-      </div>
-    </div>
-    <!--END GRILLED CHEESE SLIDE 2-->
-    <!--GRILLED CHEESE SLIDE 3-->
-    <div class="grilledCheese" id="grilledcheese2">
-      <div id="heroGrilledCheese"></div>
-      <h1 class="text-center">Grilled Cheese</h1>
-      <h3 class="text-center stepbg text-center">Step 2</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-8">
-            <p>
-              Swish bread around in pan to ensure butter coats bread. Fry until bottom of bread is golden brown. Flip bread slices over.
-            </p>
-          </div>
-          <div class="col-xs-2"></div>
-        </div>
-      </div>
-      <div class="prevnextrow row">
-        <div class="col-xs-4 text-center">
-          <span onclick="grilledCheesePrev()" class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
-        </div>
-        <div class="col-xs-4"></div>
-        <div class="col-xs-4 text-center">
-          <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
-        </div>
-      </div>
-    </div>
-    <!--END GRILLED CHEESE SLIDE 3-->
-    <!--GRILLED CHEESE SLIDE 4-->
-    <div class="grilledCheese" id="grilledcheese3">
-      <div id="heroGrilledCheese"></div>
-      <h1 class="text-center">Grilled Cheese</h1>
-      <h3 class="text-center stepbg text-center">Step 3</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-8">
-            <p>
-              Add both slices of cheese to one piece of the bread. Smear other piece of bread with 1/2 avocado. Place tomato on top of avocado.
-            </p>
-          </div>
-          <div class="col-xs-2"></div>
-        </div>
-      </div>
-      <div class="prevnextrow row">
-        <div class="col-xs-4 text-center">
-          <span onclick="grilledCheesePrev()" class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
-        </div>
-        <div class="col-xs-4"></div>
-        <div class="col-xs-4 text-center">
-          <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
-        </div>
-      </div>
-    </div>
-    <!--END GRILLED CHEESE SLIDE 4-->
-    <!--GRILLED CHEESE SLIDE 5-->
-    <div class="grilledCheese" id="grilledcheese4">
-      <div id="heroGrilledCheese"></div>
-      <h1 class="text-center">Grilled Cheese</h1>
-      <h3 class="text-center stepbg text-center">Step 4</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-2"></div>
-          <div class="col-xs-8">
-            <p>
-              Once bottom of bread is golden brown, remove from heat and put both pieces of bread together. Enjoy!
-            </p>
-          </div>
-          <div class="col-xs-2"></div>
-        </div>
-      </div>
-      <div class="prevnextrow row text-center">
-        <div class="col-xs-4 text-center">
-          <span onclick="grilledCheesePrev()" class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
-        </div>
-        <div class="col-xs-4"></div>
-        <div class="col-xs-4 text-center">
-          <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
-        </div>
-      </div>
-    </div>
-    <!--END GRILLED CHEESE SLIDE 5-->
-  <script src="js/script.js"></script>
 </body>
 </html>
