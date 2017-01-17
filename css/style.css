@@ -46,10 +46,11 @@ p {
 	height: 100px;
 	width: 93%;
 	margin: 0px 10px 10px 10px;
+	padding: 0px 30px;
 	background-size: cover;
 	background-position: center;
 	border-radius: 5px;
-	background-blend-mode: multiply;
+	/*background-blend-mode: darken;*/
 }
 
 #menu2 {
@@ -104,13 +105,17 @@ header {
 	z-index: 1;
 }
 
+img {
+	opacity: .80;
+}
+
 #hero {
 	width: 100%;
 	height: 300px;
 	background-image: url("../img/homehero.jpg");
 	background-color: rgb(241,171,44);
 	background-size: cover;
-	background-blend-mode: multiply;
+	/*background-blend-mode: multiply;*/
 }
 
 #heroGrilledCheese {
@@ -186,6 +191,7 @@ header p {
 	float: right;
 	margin-right: 25px;
 	text-shadow: 0px 0px 5px white;
+	transition: all 1000ms;
 }
 
 header span {
@@ -229,25 +235,12 @@ nav span {
 }
 
 #onboard {
-	padding-top: 150px;
+	padding-top: 260px;
 	visibility: hidden;
-}
-
-#onboard p {
-	color: white;
-	font-family: "Crimson Text", serif;
-	font-weight: 700;
-	font-size: 1.25em;
 }
 
 .description {
 	visibility: hidden;
-}
-
-.circle {
-	background-color: black;
-	border-radius: 50%;
-	opacity: .65;
 }
 
 ul {
@@ -256,7 +249,16 @@ ul {
 	font-size: 1.4em;
 }
 
+#sitewrapper {
+	padding-right: 0;
+	padding-left: 0;
+}
+
 @media (min-width: 768px) {
+	#hero {
+		height: 500px;
+	}
+
 	#menu {
 		width: 40%;
 	}
@@ -306,12 +308,12 @@ ul {
 	}
 
 	#hero {
-		height: 400px;
+		height: 600px;
 	}
 
 	#menu1 {
 		width: 100%;
-		height: 300px;
+		height: 150px;
 	}
 
 	#onboard {
@@ -319,7 +321,7 @@ ul {
 	}
 
 	#menu1 h2 {
-		padding-top: 125px;
+		padding-top: 35px;
 		line-height: 1em;
 	}
 
