@@ -1,3 +1,5 @@
+$("#hero").css("background-image", "url(img/cooking" + (Math.floor(Math.random() * 7) + 1) + ".gif)");
+
 var burgertime = function() {
 	$("#menu").css({left:0});
 	$("#thedarkness").css({visibility: "visible"});

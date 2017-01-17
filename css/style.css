@@ -50,6 +50,8 @@ p {
 	background-size: cover;
 	background-position: center;
 	border-radius: 5px;
+	cursor: pointer; 
+	cursor: hand;
 	/*background-blend-mode: darken;*/
 }
 
@@ -112,10 +114,9 @@ img {
 #hero {
 	width: 100%;
 	height: 300px;
-	background-image: url("../img/homehero.jpg");
+	background-image: url("../img/cooking2.gif");
 	background-color: rgb(241,171,44);
 	background-size: cover;
-	/*background-blend-mode: multiply;*/
 }
 
 #heroGrilledCheese {
@@ -175,6 +176,8 @@ img {
 
 .prevnext {
 	font-size: 5em;
+	cursor: pointer; 
+	cursor: hand;
 }
 
 .prevnextrow {
@@ -254,6 +257,11 @@ ul {
 	padding-left: 0;
 }
 
+nav span {
+	cursor: pointer; 
+	cursor: hand;
+}
+
 @media (min-width: 768px) {
 	#hero {
 		height: 500px;
@@ -321,7 +329,7 @@ ul {
 	}
 
 	#menu1 h2 {
-		padding-top: 35px;
+		padding-top: 65px;
 		line-height: 1em;
 	}
 
