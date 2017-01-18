@@ -12,6 +12,23 @@ p {
 	font-size: 1.4em;
 }
 
+header {
+	background-color: rgb(241,171,44);
+	height: 60px;
+	width: 100%;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0px 5px 10px black;
+	z-index: 1;
+	opacity: .95;
+}
+
+img {
+	opacity: .80;
+}
+
 #menu {
 	background-color: #dedbd5;
 	width: 80%;
@@ -40,11 +57,11 @@ p {
 	margin-left: 10px;
 }
 
-#menu1 {
-	background-image: url("../img/menu1.jpg");
-	background-color: rgb(241,171,44);
+#menu1, 
+#menu2, 
+#menu3, 
+#menu4 {
 	height: 100px;
-	width: 93%;
 	margin: 0px 10px 10px 10px;
 	padding: 0px 30px;
 	background-size: cover;
@@ -52,34 +69,30 @@ p {
 	border-radius: 5px;
 	cursor: pointer; 
 	cursor: hand;
-	/*background-blend-mode: darken;*/
+	opacity: .75;
+}
+
+#menu1:hover, 
+#menu2:hover, 
+#menu3:hover, 
+#menu4:hover {
+	opacity: .90;
+}
+
+#menu1 {
+	background-image: url("../img/menu1.jpg");
 }
 
 #menu2 {
-	background-image: url("../img/homehero.jpg");
-	height: 100px;
-	width: 93%;
-	margin: 0px 10px 10px 10px;
-	background-size: cover;
-	border-radius: 5px;
+	background-image: url("../img/menu2.jpg");
 }
 
 #menu3 {
-	background-image: url("../img/homehero.jpg");
-	height: 100px;
-	width: 93%;
-	margin: 0px 10px 10px 10px;
-	background-size: cover;
-	border-radius: 5px;
+	background-image: url("../img/menu3.jpg");
 }
 
 #menu4 {
-	background-image: url("../img/homehero.jpg");
-	height: 100px;
-	width: 93%;
-	margin: 0px 10px 10px 10px;
-	background-size: cover;
-	border-radius: 5px;
+	background-image: url("../img/menu4.jpg");
 }
 
 #thedarkness {
@@ -95,20 +108,9 @@ p {
 	transition: all 100ms;
 }
 
-header {
-	background-color: rgb(241,171,44);
-	height: 50px;
-	width: 100%;
-	display: block;
-	position: fixed;
-	top: 0;
-	left: 0;
-	box-shadow: 0px 5px 10px black;
-	z-index: 1;
-}
-
-img {
-	opacity: .80;
+#choices {
+	width: 90%;
+	margin: 0 auto;
 }
 
 #hero {
@@ -117,6 +119,7 @@ img {
 	background-image: url("../img/cooking2.gif");
 	background-color: rgb(241,171,44);
 	background-size: cover;
+	background-position: center;
 }
 
 #heroGrilledCheese {
@@ -125,7 +128,6 @@ img {
 	background-image: url("../img/menu1.jpg");
 	background-color: rgb(241,171,44);
 	background-size: cover;
-	/*background-blend-mode: multiply;*/
 }
 
 .grilledCheese {
@@ -145,23 +147,12 @@ img {
 	text-shadow: 0px 0px 35px black;
 }
 
-#grilledcheese0 {
-	display: none;
-}
-
-#grilledcheese1 {
-	display: none;
-}
-
-#grilledcheese2 {
-	display: none;
-}
-
-#grilledcheese3 {
-	display: none;
-}
-
-#grilledcheese4 {
+#grilledcheese0,
+#grilledcheese1,
+#grilledcheese2,
+#grilledcheese3,
+#grilledcheese4,
+ {
 	display: none;
 }
 
@@ -180,6 +171,11 @@ img {
 	cursor: hand;
 }
 
+.prevnext:hover {
+	text-shadow: 0px 0px 40px white;
+	transition: all 200ms;
+}
+
 .prevnextrow {
 	position: fixed;
 	width: 100%;
@@ -195,10 +191,22 @@ header p {
 	margin-right: 25px;
 	text-shadow: 0px 0px 5px white;
 	transition: all 1000ms;
+	display: inline;
+}
+
+.motto {
+	font-family: 'Montserrat', sans-serif;
+	font-size: .35em;
+	color: black;
+	float: right;
+	margin-right: 5px;
+	margin-top: -10px;
+	transition: all 1000ms;
+	display: inline;
 }
 
 header span {
-	margin: 10px 0 0 10px;
+	margin: 15px 0 0 15px;
 	font-size: 2em;
 	color: #946800;
 }
@@ -291,6 +299,11 @@ nav span {
 	.grilledCheese h3 {
 		font-size: 2em;
 	}
+
+	#onboard {
+		visibility: visible;
+		padding-top: 175px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -319,21 +332,26 @@ nav span {
 		height: 600px;
 	}
 
-	#menu1 {
+	#menu1,
+	#menu2,
+	#menu3,
+	#menu4 {
 		width: 100%;
 		height: 150px;
 	}
 
-	#onboard {
-		visibility: visible;
-	}
-
-	#menu1 h2 {
+	#menu1 h2,
+	#menu2 h2,
+	#menu3 h2,
+	#menu4 h2 {
 		padding-top: 65px;
 		line-height: 1em;
 	}
 
-	#menu1 p {
+	#menu1 p,
+	#menu2 p,
+	#menu3 p,
+	#menu4 p {
 		color: white;
 		font-family: "Crimson Text", serif;
 		font-weight: 700;
@@ -348,11 +366,14 @@ nav span {
 		height: 700px;
 	} 
 
-}
-
-/*@media (min-width: 1200px) {
-	body {
-		width: 1200px;
+	#onboard {
+		width: 75%;
 		margin: 0 auto;
+		padding-top: 260px;
 	}
-}*/
+
+	.motto {
+		display: none;
+	}
+
+}

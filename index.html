@@ -17,13 +17,13 @@
   <div id="sitewrapper">
     <header>
       <span id="burger" onclick="burgertime()" class="glyphicon glyphicon-menu-hamburger"></span>
-      <p class="text-right">SOUSZY</p>
+      <p onclick="home()" class="text-right">SOUSZY</br><span class="motto">Make something tasty</span></p>
       <!-- DESKTOP MENU -->
       <nav class="text-center">
         <span onclick="grilledcheese()">Grilled Cheese</span>
-        <span>Grilled Cheese</span>
-        <span>Grilled Cheese</span>
-        <span>Grilled Cheese</span>
+        <span>Peruvian Chicken</span>
+        <span>Italian Meatballs</span>
+        <span>Smashed Taters</span>
       </nav>
     </header>
     <!--MOBILE/TABLET MENU-->
@@ -34,28 +34,28 @@
         <h2 class="text-center">grilled cheese</h2>
       </div>
       <div id="menu2">
-        <h2 class="text-center">italian wedding soup</h2>
+        <h2 class="text-center">peruvian chicken</h2>
       </div>
       <div id="menu3">
-        <h2 class="text-center">pork tenderloin</h2>
+        <h2 class="text-center">italian meatballs</h2>
       </div>
       <div id="menu4">
-        <h2 class="text-center">b.l.a.t. sandwich</h2>
+        <h2 class="text-center">smashed taters</h2>
       </div>
     </div>
     <!--THEDARKNESS appears when menu is activated-->
     <div id="thedarkness"></div>
-    <!--Main container of App-->
-    <main id="appcontainer">
+    <!--Onboarding Graphics-->
+
       <div id="hero">
         <div id="onboard" class="row text-center">
-          <div class="col-md-3 col-md-offset-1">
+          <div class="col-sm-4">
             <img src="img/onboard1.png">
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-4">
             <img src="img/onboard2.png">
           </div>
-          <div class="col-md-3">
+          <div class="col-sm-4">
             <img src="img/onboard3.png">
           </div>
         </div>
@@ -71,29 +71,29 @@
           </div>
         </div>
       <!-- Recipe choices w/ responsiveness -->
-        <div class="row">
+        <div class="row" id="choices">
           <div class="col-sm-6">
             <div id="menu1" class="text-center" onclick="grilledcheese()">
               <h2 class="text-center">Grilled Cheese</h2>            
             </div>
           </div>
           <div class="col-sm-6">
-            <div id="menu1">
-              <h2 class="text-center">Grilled Cheese</h2>
+            <div id="menu2">
+              <h2 class="text-center">Peruvian Chicken</h2>
             </div>
           </div>
           <div class="col-sm-6">
-            <div id="menu1">
-              <h2 class="text-center">Grilled Cheese</h2>
+            <div id="menu3">
+              <h2 class="text-center">Italian Meatballs</h2>
             </div>
           </div>
           <div class="col-sm-6">
-            <div id="menu1">
-              <h2 class="text-center">Grilled Cheese</h2>
+            <div id="menu4">
+              <h2 class="text-center">Smashed Taters</h2>
             </div>
           </div>
         </div>
-      </main>
+      
       <!--GRILLED CHEESE SLIDE 1-->
       <section class="grilledCheese" id="grilledcheese0">
         <div id="heroGrilledCheese"></div>
@@ -116,11 +116,11 @@
           </div>
         </div>
         <div class="prevnextrow row">
-          <div class="col-xs-4 text-center">
+          <div class="col-xs-3 text-center">
             <span class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
           </div>
-          <div class="col-xs-4"></div>
-          <div class="col-xs-4 text-center">
+          <div class="col-xs-6"></div>
+          <div class="col-xs-3 text-center">
             <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
           </div>
         </div>
@@ -143,11 +143,11 @@
           </div>
         </div>
         <div class="prevnextrow row">
-          <div class="col-xs-4 text-center">
+          <div class="col-xs-3 text-center">
             <span onclick="grilledCheesePrev()" class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
           </div>
-          <div class="col-xs-4"></div>
-          <div class="col-xs-4 text-center">
+          <div class="col-xs-6"></div>
+          <div class="col-xs-3 text-center">
             <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
           </div>
         </div>
@@ -170,11 +170,11 @@
           </div>
         </div>
         <div class="prevnextrow row">
-          <div class="col-xs-4 text-center">
+          <div class="col-xs-3 text-center">
             <span onclick="grilledCheesePrev()" class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
           </div>
-          <div class="col-xs-4"></div>
-          <div class="col-xs-4 text-center">
+          <div class="col-xs-6"></div>
+          <div class="col-xs-3 text-center">
             <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
           </div>
         </div>
@@ -197,11 +197,11 @@
           </div>
         </div>
         <div class="prevnextrow row">
-          <div class="col-xs-4 text-center">
+          <div class="col-xs-3 text-center">
             <span onclick="grilledCheesePrev()" class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
           </div>
-          <div class="col-xs-4"></div>
-          <div class="col-xs-4 text-center">
+          <div class="col-xs-6"></div>
+          <div class="col-xs-3 text-center">
             <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
           </div>
         </div>
@@ -224,17 +224,17 @@
           </div>
         </div>
         <div class="prevnextrow row text-center">
-          <div class="col-xs-4 text-center">
+          <div class="col-xs-3 text-center">
             <span onclick="grilledCheesePrev()" class="prevnext glyphicon glyphicon-circle-arrow-left"></span>
           </div>
-          <div class="col-xs-4"></div>
-          <div class="col-xs-4 text-center">
+          <div class="col-xs-6"></div>
+          <div class="col-xs-3 text-center">
             <span onclick="grilledCheeseNext()" class="prevnext glyphicon glyphicon-circle-arrow-right"></span>
           </div>
         </div>
       </section>
       <!--END GRILLED CHEESE SLIDE 5-->
-    <script src="js/script.js"></script>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
