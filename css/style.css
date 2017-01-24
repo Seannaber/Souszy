@@ -242,7 +242,18 @@ nav {
 
 nav span {
 	font-family: "Montserrat", sans-serif;
-	font-size: 1em;
+	font-size: 1.25em;
+	margin: 0 10px;
+	cursor: pointer; 
+	cursor: hand;
+}
+
+nav span:hover {
+	color: black;
+}
+
+#menu1active {
+	background: black;
 }
 
 #onboard {
@@ -263,11 +274,6 @@ ul {
 #sitewrapper {
 	padding-right: 0;
 	padding-left: 0;
-}
-
-nav span {
-	cursor: pointer; 
-	cursor: hand;
 }
 
 @media (min-width: 768px) {
@@ -318,6 +324,8 @@ nav span {
 	    left: 50%;
 	    margin-left: -116px;
 	    font-size: 4em;
+	    cursor: pointer; 
+		cursor: hand;
 	}
 
 	header {

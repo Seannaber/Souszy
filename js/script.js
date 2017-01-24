@@ -15,12 +15,14 @@ var home = function() {
 	$("#grilledcheese2").css({display: "none"});
 	$("#grilledcheese3").css({display: "none"});
 	$("#grilledcheese4").css({display: "none"});
+	$(".description").css({display: "block"});
 };
 
 var grilledcheese = function() {
 	$.cookie("Menu1", 0);
 	$("#grilledcheese" + Number($.cookie("Menu1"))).css({display: "block"});
 	$(".description").css({display: "none"});
+	$("#menu1notactive").attr("id", "#menu1active");
 };
 
 var grilledCheeseNext = function() {
