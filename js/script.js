@@ -11,6 +11,7 @@ var byebye = function() {
 };
 
 var home = function() {
+	$("#grilledcheese0").css({display: "none"});
 	$("#grilledcheese1").css({display: "none"});
 	$("#grilledcheese2").css({display: "none"});
 	$("#grilledcheese3").css({display: "none"});
